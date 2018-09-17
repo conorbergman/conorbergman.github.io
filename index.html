@@ -12,15 +12,26 @@
   <title>Conor Bergman</title>
 </head>
 <body>
-  <header class="">
+  <header class="top-nav">
     <h3 class="pull-left">Conor Bergman</h3>
     <nav class="pull-right">
-      <a href="index.html" class="nav-link active">Home</a>
-      <a href="resume.html" class="nav-link">Resume</a>
-      <a href="contact.html" class="nav-link">Contact</a>
+      <ul>
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="resume.html" class="nav-link">Resume</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
     </nav>
   </header>
-  
+
+  <span class="left-bar">
+    <ul>
+      <li><a href="drag.html">Drag</a></li>
+      <li><a href="draw.html">Draw</a></li>
+      <li><a href="messages.html">Messages</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </span>
+
   <!-- overlay for content -->
   <div class="overlay">
     <div class="loading">
@@ -35,19 +46,20 @@
   	<div class="container">
   		<div class="row">
   			<div class="col" id="tile">
-  				<div class="card float-card" data="resume.html">
+  				<div class="card float-card" style="cursor: pointer;" onclick="window.location='resume.html';">
   					<div class="top-sec">
-  						<img class="card-img-top" src="http://via.placeholder.com/350x150"></img>
+  						<img class="card-img-top" src="http://via.placeholder.com/350x250"></img>
   					</div>
   					<div class="bot-sec">
   						<div class="card-body">Resume</div>
   					</div>
   				</div>
   			</div>
+
   			<div class="col" id="tile">
-  				<div class="card float-card" data="resume.html">
+  				<div class="card float-card" style="cursor: pointer;" onclick="window.location='contact.html';">
   					<div class="top-sec">
-  						<img class="card-img-top" src="http://via.placeholder.com/350x150"></img>
+  						<img class="card-img-top" src="http://via.placeholder.com/350x250"></img>
   					</div>
   					<div class="bot-sec">
   						<div class="card-body">Resume</div>
@@ -57,9 +69,9 @@
   		</div>
   		<div class="row">
   			<div class="col" id="tile">
-  				<div class="card float-card" data="index.html">
+  				<div class="card float-card" style="cursor: pointer;" onclick="window.location='contact.html';">
   					<div class="top-sec">
-  						<img class="card-img-top" src="http://via.placeholder.com/350x150"></img>
+  						<img class="card-img-top" src="http://via.placeholder.com/350x250"></img>
   					</div>
   					<div class="bot-sec">
   						<div class="card-body">Resume</div>
@@ -67,9 +79,9 @@
   				</div>
   			</div>
   			<div class="col" id="tile">
-  				<div class="card float-card" data="index.html">
+  				<div class="card float-card" style="cursor: pointer;" onclick="window.location='contact.html';">
   					<div class="top-sec">
-  						<img class="card-img-top" src="http://via.placeholder.com/350x150"></img>
+  						<img class="card-img-top" src="http://via.placeholder.com/350x250"></img>
   					</div>
   					<div class="bot-sec">
   						<div class="card-body">Resume</div>
