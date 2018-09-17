@@ -6,19 +6,89 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
 
   <title>Conor Bergman</title>
 </head>
 <body>
-  <header class="masthead mb-auto">
-    <h3 class="masthead-brand">Conor Bergman</h3>
-    <nav class="nav-masthead nav justify-content-center">
-      <a href="#" class="nav-link active">Home</a>
-      <a href="#" class="nav-link">Resume</a>
-      <a href="#" class="nav-link">Contact</a>
+  <header class="">
+    <h3 class="pull-left">Conor Bergman</h3>
+    <nav class="pull-right">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="resume.html" class="nav-link">Resume</a>
+      <a href="contact.html" class="nav-link">Contact</a>
     </nav>
   </header>
-  Hello it's me.
-</body>
+  
+  <!-- overlay for content -->
+  <div class="overlay">
+    <div class="loading">
+      <div class="loading-bar"></div>
+      <div class="loading-bar"></div>
+      <div class="loading-bar"></div>
+      <div class="loading-bar"></div>
+    </div>
+  </div>
+
+  <div class = "cover">
+  	<div class="container">
+  		<div class="row">
+  			<div class="col" id="tile">
+  				<div class="card float-card" data="resume.html">
+  					<div class="top-sec">
+  						<img class="card-img-top" src="http://via.placeholder.com/350x150"></img>
+  					</div>
+  					<div class="bot-sec">
+  						<div class="card-body">Resume</div>
+  					</div>
+  				</div>
+  			</div>
+  			<div class="col" id="tile">
+  				<div class="card float-card" data="resume.html">
+  					<div class="top-sec">
+  						<img class="card-img-top" src="http://via.placeholder.com/350x150"></img>
+  					</div>
+  					<div class="bot-sec">
+  						<div class="card-body">Resume</div>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="row">
+  			<div class="col" id="tile">
+  				<div class="card float-card" data="index.html">
+  					<div class="top-sec">
+  						<img class="card-img-top" src="http://via.placeholder.com/350x150"></img>
+  					</div>
+  					<div class="bot-sec">
+  						<div class="card-body">Resume</div>
+  					</div>
+  				</div>
+  			</div>
+  			<div class="col" id="tile">
+  				<div class="card float-card" data="index.html">
+  					<div class="top-sec">
+  						<img class="card-img-top" src="http://via.placeholder.com/350x150"></img>
+  					</div>
+  					<div class="bot-sec">
+  						<div class="card-body">Resume</div>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+
+  </div>
+
+
+  <!-- load bar script from: https://www.pexels.com/blog/css-only-loaders/ -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript">
+  	$(window).load(function() {
+      $('.overlay').delay(1000).fadeOut(800);
+    });
+  </script>
+  </body>
 </html>
