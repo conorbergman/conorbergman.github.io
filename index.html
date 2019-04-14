@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <style>
+    .nav-link {
+      font-size: 115%;
+      color: #aaaaaa;
+    }
+
+    .nav-nameplate {
+      color: #939393;
+    }
+
+    #headshot-img {
+      width: 200px;
+      height: 200px;
+    }
+
+    .container {
+      padding:10px;
+    }
+
+    @media (min-width: 576px) {
+        .card-columns {
+            column-count: 1;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .card-columns {
+            column-count: 2;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .card-columns {
+            column-count: 2;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .card-columns {
+            column-count: 2;
+        }
+    }
+  </style>
+
+  <title>Conor Bergman</title>
+</head>
+<body style="padding-top: 50px;">
+  <header>
+    <div class="navbar navbar-light bg-light shadow-sm fixed-top" id="navbarHeader">
+      <div class="container d-flex justify-content-between">
+        <h3 class="nav-nameplate">
+          <strong>Conor Bergman</strong>
+        </h3>
+        <nav class="nav nav-masthead justify-content-center">
+          <a href="#projects-container" class="nav-link active">Projects</a>
+          <a href="#resume-container" class="nav-link">Resume</a>
+          <a href="#contact-container" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+  <!-- Headshot jumbotron -->
+  <div class="jumbotron" id="headshot-jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="img/headshot.jpg" alt="Me" class="rounded-circle" id="headshot-img">
+        </div>
+        <div class="col-md-6">
+          <h3 class="display-3">Hello!</h3>
+          <p>My name is Conor Bergman, I am a Computer Science, Physics, and Astronomy triple Major at the University of Maryland.
+             I currently do research on early black hole growth with the Cosmology group in the department of Astrophysics at UMD.
+             I am passionate about both programming and science, my out of classroom interests include video games, powerlifting and baseball.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <div class="container" id="projects-container">
+    <h1 class="section-head">Projects</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/fourier_music.png" alt="Card image" class="car-img-top" height=300px>
+          <div class="card-body">
+            <h2>Fourier Music</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/color_map.png" alt="Card image" class="car-img-top" height=300px>
+          <div class="card-body">
+            <h2>Color Maps</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/card.jpeg" alt="Card image" class="car-img-top" height=300px>
+          <div class="card-body">
+            <h2>Image Processing</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Resume -->
+  <div class="container" id="resume-container">
+    <h1 class="section-head">Resume</h1>
+    <div class="card-columns">
+
+      <!-- Skills and experience -->
+      <div class="card bg-light">
+        <div class="card-body">
+          <h4>Skills and Experience</h4>
+          <h5>Undergraduate Research at University of Maryland Department of Astrophysics</h5>
+          <ul>
+            <li>Created data analysis script in Python and MATLAB for model creation</li>
+            <li>Wrote custom graphical user interface in Python for easier data manipulation</li>
+            <li>Monte Carlo integration, non-uniform random distribution generation</li>
+          </ul>
+          <h5>Computer and Programming Skills</h5>
+          <ul>
+            <li>Python</li>
+            <li>C, C++, Java, R, SQL</li>
+            <li>MATLAB, Ruby, OCaml</li>
+          </ul>
+          <h5>Relevant Coursework</h5>
+          <ul>
+            <li>Algorithms</li>
+            <li>Database Design</li>
+            <li>Introduction to Computer Systems</li>
+            <li>Organization of Programming Languages</li>
+            <li>Discrete Structures</li>
+            <li>Computational Astrophysics</li>
+          </ul>
+          <h5>Presentations and Leadership</h5>
+          <ul>
+            <li>Presentation at UMD Observatory, 5 December 2016
+            <ul>
+              <li>'A Study of the Size and Brightness of NGC 891 in H-alpha and JC-B CCD Filters'</li>
+            </ul></li>
+            <li>Presentation at UMD Scholars Academic Showcase, 4 May 2017
+            <ul>
+              <li>'Estimating the Duty Cycle for High Redshift Quasars with Dark Matter Halo Matching'</li>
+            </ul></li>
+            <li>University of Maryland Scholars Peer Mentor</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="card bg-light">
+        <div class="card-body">
+          <h4>Education</h4>
+          <h5>University of Maryland, College Park</h5>
+          <strong>College of Computer Mathematical and Natural Sciences</strong>
+          <ul>
+            <li>Bachelor of Science in Computer Science</li>
+            <li>Bachelor of Science in Physics</li>
+            <li>Bachelor of Science in Astronomy</li>
+          </ul>
+          <strong>Cumulative GPA:</strong> 3.25
+        </div>
+      </div>
+
+      <!-- Work Experience -->
+      <div class="card bg-light">
+        <div class="card-body">
+          <h4>Work Experience</h4>
+          <h5>Coder Kids</h5>
+          <strong>Tutor</strong>
+          <ul>
+            <li>Implement lesson plans and deliver course material</li>
+            <li>Lead classrom, assist with code debugging, create supplemental material</li>
+            <li>Courses taught including mobile app development, cryptography, introduction to programming</li>
+          </ul>
+          <h5>HyperOffice</h5>
+          <strong>Marketing Analyst</strong>
+          <ul>
+            <li>Implemented Python programs to automate marketing practices</li>
+            <li>Used search engine optimization techniques to improve link rating and increased sales leads</li>
+            <li>Produced content published on lead automotive news site and blog</li>
+            <li>Constructed marketing campaign and initiated lead identification</li>
+          </ul>
+          <h5>Breezio</h5>
+          <strong>Intern</strong>
+          <ul>
+            <li>Wrote Python scripts for organization of tickets to expediate software development cycle</li>
+            <li>Performed software testing and used Redmine to write and track tickets</li>
+            <li>Worked on marketing campaigns and lead identification</li>
+            <li>Assisted requirements gathering and produced client facing material for software training</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="container" id="contact-container">
+    <h1 class="section-head">Contact</h1>
+    <div class="row">
+      <span class="col-md-4"><img src="img/mail_icon.svg" alt="email:" width=20px>  conorbergman@gmail.com </span>
+      <span class="col-md-4"><img src="img/git_icon.png" alt="github:" width=20px>  https://github.com/conorbergman</span>
+      <span class="col-md-4"><img src="img/web_icon.png" alt="website:" width=20px>  https://conorbergman.github.io/</span>
+    </div>
+  </div>
+
+  </main>
+
+  <footer>
+    <div class="text-center">Last Updated: April 2019</div>
+  </footer>
+
+  <!-- Bootstrap JS: jQuery, Popper.js, Boostrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
